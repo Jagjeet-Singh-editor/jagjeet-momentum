@@ -4,7 +4,7 @@ document.querySelectorAll('#navigation a').forEach(a=>a.addEventListener('click'
 
 const portfolio=document.querySelector('#portfolio');
 const workStatus=document.querySelector('#work-status');
-const featuredIds=['ai-vedios-01','vsl-reels-for-ads-01','podcast-03','event-reels-01','ai-vedios-05','achor-reel-shoot-and-edit-06'];
+const featuredIds=['ai-vedios-01','vsl-reels-for-ads-02','podcast-03','event-reels-01','ai-vedios-05','achor-reel-shoot-and-edit-06'];
 let projects=[];
 const filters=[...document.querySelectorAll('[data-filter]')];
 const dialog=document.querySelector('#video-dialog');
