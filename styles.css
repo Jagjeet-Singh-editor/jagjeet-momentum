@@ -47,3 +47,40 @@
 @media(min-width:1600px){.hero,.hero-visual{min-height:540px}.hero-copy{padding-top:45px}.hero-visual .portrait{width:95%}}
 @media(max-width:1000px) and (min-width:681px){.hero,.hero-visual{min-height:370px}.hero-copy h1{font-size:7vw}.hero-copy{padding-top:24px}.hero-intro{font-size:15px}.hero-actions{gap:8px}.hero-actions .button{font-size:12px;padding:9px 14px}.hero-note{font-size:18px}.hero-script{font-size:20px}}
 @media(max-width:680px){.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:30px 5% 10px}.hero-copy h1{font-size:13.3vw;margin:22px 0}.hero-intro{font-size:17px}.hero-visual{height:350px;min-height:350px;max-width:none}.hero-visual .portrait{height:120%;width:90%;left:0;bottom:-16%}.portrait-echo{height:120%;width:90%;bottom:-16%}.echo-front{left:10%}.echo-back{left:20%}.hero-arrow{inset:0 15% 0 0}.hero-note{left:5%;bottom:20%;font-size:21px}.hero-script{right:6%;font-size:21px}.hero-collage{width:35%;right:0}.hero-actions .button{font-size:13px;padding:10px 19px}.music-feature{grid-template-columns:1fr;gap:35px}.music-screen{box-shadow:8px 8px 0 var(--orange)}.music-feature h2{font-size:70px}.music-feature h2 span{font-size:32px}.project-play{aspect-ratio:9/16}}
+/* Readable spacing, compact portfolio and a calm client-voice loop. */
+body{letter-spacing:.01em;line-height:1.65}
+.brand{letter-spacing:0;line-height:1.1}
+.hero-copy h1{font-size:clamp(54px,6.4vw,108px);line-height:1;letter-spacing:-.012em;margin:20px 0 24px}
+.hero-intro{line-height:1.6}
+.section-heading h2,.about-copy h2{line-height:1.1;letter-spacing:0}
+.contact-copy h2{line-height:1.04;letter-spacing:0}
+.approach-step h3,.service-list h3,.process-grid h3,form h3,.dialog-copy h2{line-height:1.18;letter-spacing:0}
+.about-image-word{line-height:.95;letter-spacing:0}
+.demo-words strong{line-height:1.08;letter-spacing:0}
+.hero-note{line-height:1.1}
+.portfolio-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:32px 18px}
+.project h3{font-size:17px;line-height:1.4;letter-spacing:0;margin:9px 0}
+.project>p{font-size:14px;line-height:1.65;max-width:100%}
+.project-category{font-size:12px;line-height:1.5;letter-spacing:.06em;margin-top:14px;overflow-wrap:anywhere}
+.play-circle{width:44px;height:44px}.play-circle svg{width:16px;height:16px}
+.project-time{right:7px;bottom:7px;font-size:12px}
+.testimonials-section{background:#181815;border-top:1px solid #ffffff20;overflow:hidden}
+.testimonials-section .section-heading{align-items:center}
+.testimonial-disclosure{font-size:15px!important;line-height:1.7;color:#b9b4aa!important}
+.testimonial-marquee{overflow:hidden;margin:0 -4.95%;padding:8px 0 16px;mask-image:linear-gradient(to right,transparent,#000 3%,#000 97%,transparent)}
+.testimonial-track{display:flex;width:max-content;animation:testimonial-drift 65s linear infinite}
+.testimonial-group{display:flex;gap:22px;padding-right:22px}
+.testimonial-card{width:350px;padding:28px;border:1px solid #ffffff25;border-radius:12px;background:#22221e;display:flex;flex-direction:column}
+.quote-mark{font:76px/.8 Georgia,serif;color:var(--orange);height:52px}
+.draft-label{color:#d9aa94;font-size:12px;letter-spacing:.05em;line-height:1.6}
+.testimonial-card>p{font-size:18px;line-height:1.65;margin:18px 0 30px;flex:1}
+.testimonial-person{display:flex;gap:14px;align-items:center;border-top:1px solid #ffffff20;padding-top:20px}
+.testimonial-avatar{display:grid;place-items:center;flex:0 0 43px;height:43px;border-radius:50%;background:var(--orange);color:white;font-size:14px;font-weight:700}
+.testimonial-person strong{font-size:15px;line-height:1.5;overflow-wrap:anywhere}.testimonial-person small{display:block;font-size:12px;color:#b4afa4;margin-top:4px;font-weight:400}
+.testimonial-person a:hover{color:var(--orange)}
+.testimonial-hint{font-size:12px;color:#b4afa4;margin:18px 0 0}
+.testimonial-marquee:hover .testimonial-track,.testimonial-marquee:focus-within .testimonial-track{animation-play-state:paused}
+@keyframes testimonial-drift{to{transform:translateX(-50%)}}
+@media(max-width:1100px){.portfolio-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 20px}.project h3{font-size:19px}}
+@media(max-width:680px){.hero-copy h1{font-size:12.5vw;line-height:1;letter-spacing:0}.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px}.project h3{font-size:17px}.testimonial-card{width:300px;padding:24px}.testimonial-card>p{font-size:17px}.testimonials-section .section-heading>p{margin-top:24px}.testimonial-marquee{margin:0 -5.6%}.about-copy h2{font-size:52px}.about-image-word{font-size:100px}}
+@media(prefers-reduced-motion:reduce){.testimonial-marquee{overflow-x:auto;mask-image:none}.testimonial-track{animation:none}.testimonial-group[aria-hidden]{display:none}}

@@ -53,7 +53,7 @@ dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog
 player.addEventListener('error',()=>{if(player.getAttribute('src'))videoError.hidden=false});
 document.querySelector('#similar-project').addEventListener('click',()=>{closeProject();document.querySelector('#contact').scrollIntoView({behavior:paused?'auto':'smooth'})});
 filters.forEach(b=>b.addEventListener('click',()=>renderWork(b.dataset.filter)));
-fetch('portfolio.json?v=3').then(r=>{if(!r.ok)throw Error('Portfolio unavailable');return r.json()}).then(data=>{projects=data;renderWork()}).catch(()=>{workStatus.textContent='The portfolio could not load. Refresh the page to try again.';const retry=document.createElement('button');retry.className='button outline';retry.textContent='Reload portfolio';retry.onclick=()=>location.reload();portfolio.append(retry)});
+fetch('portfolio.json?v=4').then(r=>{if(!r.ok)throw Error('Portfolio unavailable');return r.json()}).then(data=>{projects=data;renderWork()}).catch(()=>{workStatus.textContent='The portfolio could not load. Refresh the page to try again.';const retry=document.createElement('button');retry.className='button outline';retry.textContent='Reload portfolio';retry.onclick=()=>location.reload();portfolio.append(retry)});
 
 const demo=document.querySelector('.motion-demo');
 const stages=[
@@ -89,3 +89,6 @@ const demoObserver=new IntersectionObserver(entries=>{demoVisible=entries[0].isI
 document.querySelectorAll('[data-stage]').forEach(button=>button.addEventListener('click',()=>{stageIndex=Number(button.dataset.stage)}));
 setInterval(()=>{if(demoVisible&&!paused&&!document.hidden&&!demo.matches(':hover')&&!document.querySelector('.approach-layout').contains(document.activeElement)){stageIndex=(stageIndex+1)%3;document.querySelector(`[data-stage="${stageIndex}"]`).click()}},5500);
 
+// Duplicate only the visual track so the client cards loop without a jump.
+const testimonialGroup=document.querySelector('.testimonial-group');
+if(testimonialGroup){const copy=testimonialGroup.cloneNode(true);copy.setAttribute('aria-hidden','true');copy.querySelectorAll('a').forEach(link=>link.setAttribute('tabindex','-1'));testimonialGroup.parentElement.append(copy);}

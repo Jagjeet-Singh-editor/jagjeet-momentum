@@ -183,7 +183,7 @@
   },
   {
     "id": "event-reels-01",
-    "category": "Events",
+    "category": "Experience reels",
     "title": "The art of chocolate",
     "duration": 41,
     "length": "0:41",
@@ -197,7 +197,7 @@
   },
   {
     "id": "event-reels-02",
-    "category": "Events",
+    "category": "Experience reels",
     "title": "Inside the chocolate workshop",
     "duration": 36,
     "length": "0:35",
@@ -211,7 +211,7 @@
   },
   {
     "id": "event-reels-03",
-    "category": "Events",
+    "category": "Experience reels",
     "title": "A farewell to remember",
     "duration": 33,
     "length": "0:33",
@@ -225,7 +225,7 @@
   },
   {
     "id": "event-reels-04",
-    "category": "Events",
+    "category": "Experience reels",
     "title": "Meet the learning experience",
     "duration": 61,
     "length": "1:01",
@@ -239,7 +239,7 @@
   },
   {
     "id": "event-reels-05",
-    "category": "Events",
+    "category": "Experience reels",
     "title": "A new beginning",
     "duration": 46,
     "length": "0:46",
@@ -253,7 +253,7 @@
   },
   {
     "id": "event-reels-06",
-    "category": "Events",
+    "category": "Experience reels",
     "title": "The event, retold",
     "duration": 34,
     "length": "0:33",
